@@ -65,7 +65,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative w-full" style={{ height: 'min(80vh, calc(100vw / 2.2))' }}>
+    <section className="relative w-full h-[100vh] md:h-[80vh]">
       {heroSections.map((section, index) => (
         <motion.div
           key={section.title}
@@ -89,7 +89,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white tracking-wide max-w-5xl hero-text-hover [text-shadow: 2px_2px_0_rgb(0,0,0)] whitespace-nowrap"
+              className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-white tracking-wide max-w-5xl hero-text-hover [text-shadow: 2px_2px_0_rgb(0,0,0)] sm:whitespace-nowrap"
             >
               {heroSections[currentSection].title}
             </motion.h1>
@@ -97,7 +97,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg sm:text-xl lg:text-2xl text-white mb-8 tracking-wider max-w-4xl mx-auto hero-text-hover [text-shadow: 1px_1px_0_rgb(0,0,0)] whitespace-normal"
+              className="text-base sm:text-lg lg:text-2xl text-white mb-8 tracking-wider max-w-4xl mx-auto hero-text-hover [text-shadow: 1px_1px_0_rgb(0,0,0)] px-2"
             >
               {heroSections[currentSection].subtitle}
             </motion.p>

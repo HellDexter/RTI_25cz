@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import Image from 'next/image';
 import { useState } from 'react';
 import ProductHero from '@/components/ProductHero';
 import ImageModal from '@/components/ImageModal';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const technologies = [
   { name: 'MIG/MAG' },
@@ -294,14 +294,14 @@ export default function RoboticWelding() {
                       className="relative h-[400px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 group"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
-                      onClick={() => setSelectedImage("/images/Modelová řada H/H-rám_1.jpg")}
+                      onClick={() => setSelectedImage("/images/model-h/frame-1.jpg")}
                     >
-                      <Image
-                        src="/images/Modelová řada H/H-rám_1.jpg"
+                      <OptimizedImage
+                        src="/images/model-h/frame-1.jpg"
                         alt="H-rám pohled 1"
-                        fill
                         className="object-contain group-hover:scale-105 transition-transform duration-300"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        width={800}
+                        height={600}
                         priority
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
@@ -344,14 +344,14 @@ export default function RoboticWelding() {
                       className="relative h-[400px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 lg:order-1 group"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
-                      onClick={() => setSelectedImage("/images/Modelová řada H/H-rám_2.jpg")}
+                      onClick={() => setSelectedImage("/images/model-h/frame-2.jpg")}
                     >
-                      <Image
-                        src="/images/Modelová řada H/H-rám_2.jpg"
+                      <OptimizedImage
+                        src="/images/model-h/frame-2.jpg"
                         alt="H-rám pohled 2"
-                        fill
                         className="object-contain group-hover:scale-105 transition-transform duration-300"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        width={800}
+                        height={600}
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -422,14 +422,14 @@ export default function RoboticWelding() {
                   className="relative h-[600px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 group"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
-                  onClick={() => setSelectedImage("/images/Modelová řada H/2023_21_HS1_H rám.jpg")}
+                  onClick={() => setSelectedImage("/images/model-h/main-frame.jpg")}
                 >
-                  <Image
-                    src="/images/Modelová řada H/2023_21_HS1_H rám.jpg"
+                  <OptimizedImage
+                    src="/images/model-h/main-frame.jpg"
                     alt="H-rám hlavní pohled"
-                    fill
                     className="object-contain group-hover:scale-105 transition-transform duration-300"
-                    sizes="100vw"
+                    width={1200}
+                    height={900}
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -470,14 +470,14 @@ export default function RoboticWelding() {
                       className="relative h-[400px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 group"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
-                      onClick={() => setSelectedImage("/images/Modelová řada E/E-rám_1.jpg")}
+                      onClick={() => setSelectedImage("/images/model-e/frame-1.jpg")}
                     >
-                      <Image
-                        src="/images/Modelová řada E/E-rám_1.jpg"
+                      <OptimizedImage
+                        src="/images/model-e/frame-1.jpg"
                         alt="E-rám pohled 1"
-                        fill
                         className="object-contain group-hover:scale-105 transition-transform duration-300"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        width={800}
+                        height={600}
                         priority
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
@@ -520,14 +520,14 @@ export default function RoboticWelding() {
                       className="relative h-[400px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 lg:order-1 group"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
-                      onClick={() => setSelectedImage("/images/Modelová řada E/E-rám_2.jpg")}
+                      onClick={() => setSelectedImage("/images/model-e/frame-2.jpg")}
                     >
-                      <Image
-                        src="/images/Modelová řada E/E-rám_2.jpg"
+                      <OptimizedImage
+                        src="/images/model-e/frame-2.jpg"
                         alt="E-rám pohled 2"
-                        fill
                         className="object-contain group-hover:scale-105 transition-transform duration-300"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        width={800}
+                        height={600}
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -598,14 +598,14 @@ export default function RoboticWelding() {
                   className="relative h-[600px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 group"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
-                  onClick={() => setSelectedImage("/images/Modelová řada E/2023_10b_HS_E_ram.jpg")}
+                  onClick={() => setSelectedImage("/images/model-e/main-frame.jpg")}
                 >
-                  <Image
-                    src="/images/Modelová řada E/2023_10b_HS_E_ram.jpg"
+                  <OptimizedImage
+                    src="/images/model-e/main-frame.jpg"
                     alt="E-rám hlavní pohled"
-                    fill
                     className="object-contain group-hover:scale-105 transition-transform duration-300"
-                    sizes="100vw"
+                    width={1200}
+                    height={900}
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -646,14 +646,14 @@ export default function RoboticWelding() {
                       className="relative h-[400px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 group"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
-                      onClick={() => setSelectedImage("/images/Modelová řada T/Stůl-1.jpg")}
+                      onClick={() => setSelectedImage("/images/model-t/table-1.jpg")}
                     >
-                      <Image
-                        src="/images/Modelová řada T/Stůl-1.jpg"
+                      <OptimizedImage
+                        src="/images/model-t/table-1.jpg"
                         alt="Stůl pohled 1"
-                        fill
                         className="object-contain group-hover:scale-105 transition-transform duration-300"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        width={800}
+                        height={600}
                         priority
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
@@ -743,14 +743,14 @@ export default function RoboticWelding() {
                     className="relative h-[600px] cursor-zoom-in rounded-xl overflow-hidden border-2 border-[#0aef0b] hover:border-4 transition-all duration-300 group"
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.2 }}
-                    onClick={() => setSelectedImage("/images/Modelová řada T/2023_XX_HS_Stůl-2.jpg")}
+                    onClick={() => setSelectedImage("/images/model-t/table-2.jpg")}
                   >
-                    <Image
-                      src="/images/Modelová řada T/2023_XX_HS_Stůl-2.jpg"
+                    <OptimizedImage
+                      src="/images/model-t/table-2.jpg"
                       alt="Stůl hlavní pohled"
-                      fill
                       className="object-contain group-hover:scale-105 transition-transform duration-300"
-                      sizes="100vw"
+                      width={1200}
+                      height={900}
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
                       <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
